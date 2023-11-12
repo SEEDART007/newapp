@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display:flex;
+       background-color:yellow;
+       width:600px;
+       
+    }
+
+    .btn{
+        margin-left:30px;
+        width:80px;
+        height:40px;
+        border:2px solid black;
+        font-size:larger;
+        font-family: Pixelify Sans;
+        background-color: blue;
+        color: aliceblue;
+        border-radius: 10px;
+    }
+    .btn1{
+        margin-top:30px;
+        margin-left:30px;
+        width:80px;
+        height:40px;
+        font-size:larger;
+        font-family: Pixelify Sans;
+        background-color: red;
+        color:white;
+        border-radius: 10px;
+    }
+    .btn2{
+        margin-top:30px;
+        margin-left:30px;
+        width:80px;
+        height:40px;
+        font-size:larger;
+        font-family: Pixelify Sans;
+        background-color: green;
+        color:white;
+        border-radius: 10px;
+    }
+    .btn3{
+        margin-top:30px;
+        margin-left:30px;
+        width:80px;
+        height:40px;
+        font-size:larger;
+        font-family: Pixelify Sans;
+        background: rgb(147, 147, 8);
+        color:white;
+        border-radius: 10px;
+    }
+    .btn4{
+        margin-top:30px;
+        margin-left:30px;
+        width:80px;
+        height:40px;
+        font-size:larger;
+        font-family: Pixelify Sans;
+        background-color: pink;
+        color:white;border-radius: 10px;
+    }
+    .container3{
+        border:3px solid blue ;
+   
+        width: 400px;
+    height: 330px;
+        margin-left:190px;
+        margin-top: 30px;
+        margin: auto;
+        justify-content: center;
+        display:flex;
+        background-color: aqua;
+         
+        
+    }
+      
+    .container2{
+        margin-top:60px;
+        display: flex;
+    }
+    body{
+        background-image: linear-gradient(red, yellow);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:530px;}
+        .hectic{
+            font-size: larger;
+            font-family:Pixelify Sans ;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .hectic1{
+            font-size: 60px;
+            font-family:Pixelify Sans ;
+            margin-left: 350px;
+            margin-top: 20px;
+           
+
+        }
+        .btn:hover{
+            background-color: white;
+            color:blue;
+            transition: 1s;
+            
+        }
+        .btn1:hover{
+            background-color: white;
+            color:red;
+            transition: 1s;
+        }
+        .btn2:hover{
+            background-color: white;
+            color:green;
+            transition: 1s;
+        }
+        .btn3:hover{
+            background-color: white;
+            color:rgb(164, 164, 13);
+            transition: 1s;
+        }
+        .btn4:hover{
+            background-color: white;
+            color:pink;
+            transition: 1s;
+        }
+       
+</style>
+<body>
+   
+    
+   
+        <div class="container2">
+            <div class="flex">
+        <input class="btn" onclick="color()" type="button" value="Blue"><br>
+        <input class="btn1"onclick="color1()" type="button" value="Red"><br>
+        
+
+        <input class="btn2"onclick="color2()" type="button" value="Green"><br>
+        <input class="btn3" onclick="color3()" type="button" value="Yellow"><br>
+        <input class="btn4"  onclick="color4()" type="button" value="Pink">
+        </div>
+        <div class="container3" id="demo">
+            <div></div>
+
+        </div>
+    </div>
+    <p class="hectic" id="61">The Current Color Of The Box Is</p>
+    
+    <p class="hectic1" id="6">Blue</p>
+    
+       
+   
+  
+    
+</body>
+<script>
+    function color(){
+        document.getElementById("demo").style.backgroundColor="blue";
+        document.getElementById('6').innerHTML="Blue";
+        document.getElementById('6').style.color="Blue";
+    }
+    function color1(){
+        document.getElementById("demo").style.backgroundColor="red";
+        document.getElementById('6').innerHTML="Red";
+        document.getElementById('6').style.color="red";
+    }
+    function color2(){
+        document.getElementById("demo").style.backgroundColor="green";
+        document.getElementById('6').innerHTML="Green";
+        document.getElementById('6').style.color="green";
+    }
+    function color3(){
+        document.getElementById("demo").style.backgroundColor="yellow";
+        document.getElementById('6').innerHTML="Yellow";
+        document.getElementById('6').style.color="yellow";
+    }
+    function color4(){
+        document.getElementById("demo").style.backgroundColor="pink";
+        document.getElementById('6').innerHTML="Pink";
+        document.getElementById('6').style.color="pink";
+    }
+    
+
+   </script>
+
+</html>
